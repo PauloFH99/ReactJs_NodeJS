@@ -1,0 +1,13 @@
+#page-home {
+    display: flex;
+  }
+  #page-home main {
+    flex: 1;
+    align-items: center;
+  }
+
+  #page-home main .contente {
+   display: flex;
+    align-items: center;
+  }
+  

@@ -9,7 +9,7 @@ function Home() {
             <main>
             <Sidebar />
                 <div id="content">
-                Bem vindo!
+               
                 </div>
             
             </main>

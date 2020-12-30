@@ -14,11 +14,7 @@ class UserController {
 
     async store(request: Request, response: Response) {
         const repository = getRepository(User);
-<<<<<<< HEAD
         const { name, email, password } = request.body;
-=======
-        const {name, email, password } = request.body;
->>>>>>> 682cd61696aceb753093db31c6133cd5d3ed7289
         console.log(request.body);
 
         const userExists = await repository.findOne({ where: { email } });
@@ -30,11 +26,7 @@ class UserController {
             })
         }
 
-<<<<<<< HEAD
         const user = repository.create({ name, email, password });
-=======
-        const user = repository.create({ name,email, password });
->>>>>>> 682cd61696aceb753093db31c6133cd5d3ed7289
 
         await repository.save(user);
 
@@ -58,11 +50,6 @@ class UserController {
     }
 
     async getAll(request: Request, response: Response) {
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> 682cd61696aceb753093db31c6133cd5d3ed7289
         const userRepository = getRepository(User);
 
         const user = await userRepository.find();
@@ -75,7 +62,6 @@ class UserController {
 
         const { id } = request.params;
 
-<<<<<<< HEAD
         const user = await getRepository(User).delete(id);
 
         if (user.affected === 1) {
@@ -105,35 +91,6 @@ class UserController {
         }
 
 
-=======
-        const userRepository = getRepository(User);
-
-        const user = await userRepository.findOneOrFail({
-            where: { id }
-        });
-
-        if (!user) {
-            return response.status(400).json({ error: 'Usuário não existe!' });
-        }
-
-        await userRepository.delete(user);
-
-        return response.json({ message: 'Usuário excluído' });
-    }
-
-    async update(request: Request, response: Response) {
-
-
-        const { id, name,email } = request.params;
-
-        const userRepository = getRepository(User);
-
-        const user = userRepository.create({ id,name, email });
-
-        await userRepository.update({ id: id }, user);
-
-        return response.json({ message: 'Usuário alterado' });
->>>>>>> 682cd61696aceb753093db31c6133cd5d3ed7289
     }
 }
 

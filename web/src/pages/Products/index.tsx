@@ -100,7 +100,7 @@ const Product: React.FC = () => {
                                             <Dropdown.Item  href="#/action-1">
                                                 <Button className="dropItem" size="sm" onClick={() => editProduct(product.id)}>
                                                     <FiEdit size={20} color="#060b26" />
-                                                    Editar
+                                                    Editar 
                                                 </Button>{' '}
                                             </Dropdown.Item>
                                             <Dropdown.Item  href="#/action-2">

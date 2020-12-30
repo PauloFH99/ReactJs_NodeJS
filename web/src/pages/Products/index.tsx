@@ -93,7 +93,7 @@ const Product: React.FC = () => {
                                     <Dropdown>
                                         <Dropdown.Toggle className="drop">
                                          <FiSettings size={20} color="#060b26" />
-                                        Ações 
+                                        Ações  
                                     </Dropdown.Toggle>
 
                                         <Dropdown.Menu className="drop">

@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "es6",
+=======
+    "target": "es2015",
+>>>>>>> 682cd61696aceb753093db31c6133cd5d3ed7289
     "lib": [
       "dom",
       "dom.iterable",
@@ -12,12 +16,20 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+<<<<<<< HEAD
+=======
+    "noFallthroughCasesInSwitch": true,
+>>>>>>> 682cd61696aceb753093db31c6133cd5d3ed7289
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+<<<<<<< HEAD
     "jsx": "react"
+=======
+    "jsx": "react-jsx"
+>>>>>>> 682cd61696aceb753093db31c6133cd5d3ed7289
   },
   "include": [
     "src"

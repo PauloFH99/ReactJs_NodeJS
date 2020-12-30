@@ -106,7 +106,7 @@ const Product: React.FC = () => {
                                             <Dropdown.Item  href="#/action-2">
                                                 <Button className="dropItem" size="sm" onClick={() => viewProduct(product.id)}>
                                                     <FiEye size={20} color="#060b26" />
-                                                    Visualizar 
+                                                    Visualizar  
                                                 </Button>{' '}
                                             </Dropdown.Item>
                                             <Dropdown.Item href="#/action-3">
